@@ -1,5 +1,6 @@
 import { VscBell } from "react-icons/vsc";
 import { FaRegUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -17,9 +18,11 @@ export default function Header() {
         </span>
 
         <div className="card">
-          <span className="bg-[#EFF3FB] border-2 border-[#F7F9FD ] h-10 w-10 rounded-full flex justify-center items-center">
-            <FaRegUser size={20} color="#4169E1" />
-          </span>
+          <Link to={"/profile"}>
+            <span className="bg-[#EFF3FB] border-2 border-[#F7F9FD ] h-10 w-10 rounded-full flex justify-center items-center">
+              <FaRegUser size={20} color="#4169E1" />
+            </span>
+          </Link>
         </div>
       </div>
     </header>

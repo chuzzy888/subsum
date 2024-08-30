@@ -18,65 +18,20 @@ interface Transaction {
   paymentMethod: string;
   transactionNo: string;
   date: string;
-  image: string; // Add image field to hold the image file path
+  image: string;
 }
 
 const columnHelper = createColumnHelper<Transaction>();
 
 const columns = [
-  //   columnHelper.accessor("service", {
-  //     header: "Service",
-  //     cell: info => {
-  //       // Split service into name and number for separate display
-  //       const [serviceName, serviceNumber] = info.getValue().split("\n");
-  //       return (
-  //         <div>
-  //           <div>{serviceName}</div>
-  //           <div className="text-gray-500 text-sm">{serviceNumber}</div>
-  //         </div>
-  //       );
-  //     },
-  //   }),
-
-  //   columnHelper.accessor("service", {
-  //     header: "Service",
-  //     cell: info => {
-  //       // Split service into name and number for separate display
-  //       const [serviceName, serviceNumber] = info.getValue().split("\n");
-  //       return (
-  //         <div className="flex items-center space-x-3">
-  //           {" "}
-  //           {/* Flex container */}
-  //           <img
-  //             src={serviceImage}
-  //             alt="Service"
-  //             className="w-10 h-10 rounded-full"
-  //           />{" "}
-  //           {/* Image */}
-  //           <div>
-  //             <div>{serviceName}</div>
-  //             <div className="text-gray-500 text-sm">{serviceNumber}</div>
-  //           </div>
-  //         </div>
-  //       );
-  //     },
-  //   }),
   columnHelper.accessor("service", {
     header: "Service",
     cell: info => {
-      // Split service into name and number for separate display
       const [serviceName, serviceNumber] = info.getValue().split("\n");
-      const image = info.row.original.image; // Get the image from the row
+      const image = info.row.original.image;
       return (
         <div className="flex items-center space-x-3">
-          {" "}
-          {/* Flex container */}
-          <img
-            src={image}
-            alt="Service"
-            className="w-10 h-10 rounded-full"
-          />{" "}
-          {/* Image */}
+          <img src={image} alt="Service" className="w-10 h-10 rounded-full" />{" "}
           <div>
             <div>{serviceName}</div>
             <div className="text-gray-500 text-sm">{serviceNumber}</div>
@@ -113,7 +68,7 @@ const columns = [
     header: "Payment Method",
     cell: info => <p className="text-[#4C689E]">{info.getValue()}</p>,
   }),
-  // Combine Transaction No and Date into one cell
+
   columnHelper.accessor("transactionNo", {
     header: "Transaction No",
     cell: info => {
@@ -146,7 +101,7 @@ const data: Transaction[] = [
     paymentMethod: "Transfer",
     transactionNo: "17045621860850336938179613",
     date: "6th January, 2024, 06:29PM",
-    image: img1, // Replace with the correct path to your image
+    image: img1,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -156,7 +111,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img2, // Replace with the correct path to your image
+    image: img2,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -166,7 +121,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img3, // Replace with the correct path to your image
+    image: img3,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -176,7 +131,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img1, // Replace with the correct path to your image
+    image: img1,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -186,7 +141,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img2, // Replace with the correct path to your image
+    image: img2,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -196,7 +151,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img3, // Replace with the correct path to your image
+    image: img3,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -206,7 +161,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img1, // Replace with the correct path to your image
+    image: img1,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -216,7 +171,7 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img2, // Replace with the correct path to your image
+    image: img2,
   },
   {
     service: "Airtel DATA VTU\n07089075584",
@@ -226,9 +181,8 @@ const data: Transaction[] = [
     paymentMethod: "Wallet",
     transactionNo: "17045621860850336938179614",
     date: "6th January, 2024, 06:30PM",
-    image: img3, // Replace with the correct path to your image
+    image: img3,
   },
-  // Add more transactions here...
 ];
 
 const TransactionTable: React.FC = () => {

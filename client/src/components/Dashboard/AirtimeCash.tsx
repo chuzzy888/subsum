@@ -3,19 +3,31 @@ import React from "react";
 export default function AirtimeCash() {
   return (
     <div className="ml-64 p-8 flex flex-col items-center justify-center">
-      <div className="mb-6 flex justify-between items-center gap-8  max-w-lg w-full">
-        <span className="  border-b-4 border-[#4169E1] text-blue-500">
-          Fill Info
-        </span>
-        <span className="border-b-4 border-[#D7E1F4] text-[#D7E1F4]">
-          Make Payment
-        </span>
-        <span className=" border-b-4 border-[#D7E1F4]  text-[#D7E1F4]">
-          View Receipt
-        </span>
-      </div>
+      <section className=" flex justify-center gap-4 items-center">
+        <div>
+          <p className=" text-[14px] text-[#4169E1] font-semibold">Fill Info</p>
 
-      <div className=" rounded-xl bg-[#F7F9FD] border border-[#D7E1F4] p-8 max-w-lg w-full">
+          <div className=" bg-[#4169E1] h-1 w-32 rounded-full mt-2" />
+        </div>
+
+        <div>
+          <p className=" text-[14px] text-[#D7E1F4] font-semibold">
+            Make Payment
+          </p>
+
+          <div className=" bg-[#D7E1F4] h-1 w-32 rounded-full mt-2" />
+        </div>
+
+        <div>
+          <p className=" text-[14px] text-[#D7E1F4] font-semibold">
+            View Receipt
+          </p>
+
+          <div className=" bg-[#D7E1F4] h-1 w-32 rounded-full mt-2" />
+        </div>
+      </section>
+
+      <div className=" rounded-xl bg-[#F7F9FD] border border-[#D7E1F4] p-8 max-w-lg w-full mt-5">
         <h2 className="text-xl text-[#6882B6] font-semibold text-center mb-8">
           Airtime to Cash
         </h2>

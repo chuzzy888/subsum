@@ -1,5 +1,5 @@
 import logo from "../../assets/images/logo.png";
-import { MdElectricBolt, MdSpaceDashboard } from "react-icons/md";
+import { MdDashboard, MdElectricBolt } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { MdLogout } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -16,11 +16,11 @@ export default function Sidebar() {
 
       <nav className="mt-6 flex justify-center flex-col gap-8">
         <Link
-          to={"#"}
-          className="flex items-center mx-3 py-1 px-4 text-[#4C689E] rounded-md hover:bg-gray-200 font-medium text-[16px]"
+          to={"/dashboard"}
+          className="flex items-center mx-3 py-2 px-4 text-[#FFFFFF] rounded-md bg-[#4169E1] hover:bg-blue-900 font-medium text-[16px]"
         >
           <p className="mr-3">
-            <MdSpaceDashboard size={20} className=" text-[#6882B6]" />
+            <MdDashboard size={20} className=" text-[#FFFFFF]" />
           </p>
           Dashboard
         </Link>
@@ -78,7 +78,7 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          to={"#"}
+          to={"/airtime-cash"}
           className="flex items-center mx-3 py-1 px-4 text-[#4C689E] rounded-md hover:bg-gray-200 font-medium text-[16px]"
         >
           <p className="mr-3">
@@ -88,7 +88,7 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          to={"#"}
+          to={"/transaction-history"}
           className="flex items-center mx-3 py-1 px-4 text-[#4C689E] rounded-md hover:bg-gray-200 font-medium text-[16px]"
         >
           <p className="mr-3">
@@ -98,7 +98,7 @@ export default function Sidebar() {
         </Link>
 
         <Link
-          to={"#"}
+          to={"/help-support"}
           className="flex items-center mx-3 py-1 px-4 text-[#4C689E] rounded-md hover:bg-gray-200 font-medium text-[16px]"
         >
           <p className="mr-3">

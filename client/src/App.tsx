@@ -15,7 +15,7 @@ function App() {
           <Routes>
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="/dashboard" element={<UserDashboard />} />
-            <Route path="/Login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/airtime-cash" element={<Airtime />} />
             <Route path="/help-support" element={<HelpSupport />} />

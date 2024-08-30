@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "../../components/Dashboard/Sidebar";
-import AirtimeCash from "../../components/AirtimeCash";
+import AirtimeCash from "../../components/Dashboard/AirtimeCash";
 import AirtimeHeader from "../../components/Dashboard/AirtimeHeader";
 
 const UserDashboard = () => {
