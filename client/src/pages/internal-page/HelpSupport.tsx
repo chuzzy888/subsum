@@ -1,4 +1,3 @@
-import React from "react";
 import Sidebar from "../../components/Dashboard/Sidebar";
 import HelpSupportHeader from "../../components/Dashboard/HelpSupportHeader";
 import Help from "../../components/Dashboard/Help";

@@ -1,4 +1,3 @@
-import React from "react";
 import cam from "../../assets/images/cam.png";
 import { IoCameraOutline } from "react-icons/io5";
 import { FiCopy } from "react-icons/fi";

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function AirtimeCash() {
   return (
     <div className="ml-64 p-8 flex flex-col items-center justify-center">

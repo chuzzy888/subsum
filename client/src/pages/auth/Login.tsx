@@ -1,4 +1,3 @@
-import React from "react";
 import lfts from "../../assets/images/lfts.png";
 import gg from "../../assets/images/gg.png";
 import { MdKeyboardArrowLeft } from "react-icons/md";

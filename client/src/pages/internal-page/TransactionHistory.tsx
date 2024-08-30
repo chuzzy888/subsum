@@ -1,4 +1,3 @@
-import React from "react";
 import Sidebar from "../../components/Dashboard/Sidebar";
 import TransactionHeader from "../../components/Dashboard/TransactionHeader";
 import TransactionsTable from "../../components/Dashboard/TransactionsTable";
