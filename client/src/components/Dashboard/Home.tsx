@@ -11,7 +11,7 @@ export default function Home() {
           please click to view
         </Link>
         <span className="text-2xl font-black"> /</span>
-        <Link to={"/login"}>Login</Link>
+        <Link to={"/login"}> Login</Link>
       </h3>
     </div>
   );
