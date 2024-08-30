@@ -91,7 +91,6 @@ const Login = () => {
               <button className="text-[#EE5D50]">Recover Password</button>
             </div>
             <Link to={"/dashboard"}>
-              {" "}
               <button className="bg-[#4169E1] text-white w-full py-2 px-4 rounded-xl">
                 Log in
               </button>

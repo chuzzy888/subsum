@@ -109,15 +109,17 @@ export default function Sidebar() {
       </nav>
 
       <div className="absolute bottom-10 left-0 w-full  ">
-        <button className="flex items-center mx-3 py-1 px-4 text-[#4C689E] rounded-md hover:bg-gray-200 font-medium text-[16px]">
-          <p className="mr-3">
-            <MdLogout />
-          </p>
-          Log Out
-          <span className=" ms-14">
-            <IoIosArrowDown color="#4169E1" />
-          </span>
-        </button>
+        <Link to={"/login"}>
+          <button className="flex items-center mx-3 py-1 px-4 text-[#4C689E] rounded-md hover:bg-gray-200 font-medium text-[16px]">
+            <p className="mr-3">
+              <MdLogout />
+            </p>
+            Log Out
+            <span className=" ms-14">
+              <IoIosArrowDown color="#4169E1" />
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   );

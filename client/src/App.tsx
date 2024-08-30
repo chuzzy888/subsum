@@ -6,6 +6,7 @@ import Profile from "./pages/internal-page/Profile";
 import Airtime from "./pages/internal-page/Airtime";
 import HelpSupport from "./pages/internal-page/HelpSupport";
 import TransactionHistory from "./pages/internal-page/TransactionHistory";
+import Home from "./components/Dashboard/Home";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
       <Router>
         <div>
           <Routes>
-            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<UserDashboard />} />
-            <Route path="/" element={<Login />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/airtime-cash" element={<Airtime />} />
             <Route path="/help-support" element={<HelpSupport />} />
